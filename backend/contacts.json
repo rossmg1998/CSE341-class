@@ -1,0 +1,23 @@
+[
+    {
+      "firstName": "Shara",
+      "lastName": "Gardner",
+      "email": "gardnershara@hotmail.com",
+      "favoriteColor": "Green",
+      "birthday": "1976-01-30"
+    },
+    {
+      "firstName": "Kaleb",
+      "lastName": "Gardner",
+      "email": "k.w.g.2001@hotmail.com",
+      "favoriteColor": "Red",
+      "birthday": "2001-09-04"
+    },
+    {
+      "firstName": "Alanna",
+      "lastName": "Gardner",
+      "email": "a.b.g.2003@hotmailcom",
+      "favoriteColor": "Blue",
+      "birthday": "2003-01-31"
+    }
+]
