@@ -2,3 +2,9 @@ Get http://localhost:8080/ HTTP/1.1
 
 ###
 Get http://localhost:8080/6633bc0f9bfc86d4952786e4 HTTP/1.1
+
+###
+Get https://cse341-class.onrender.com HTTP/1.1
+
+###
+Get https://cse341-class.onrender.com/6633bc0f9bfc86d4952786e4 HTTP/1.1
