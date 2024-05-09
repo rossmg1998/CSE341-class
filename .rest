@@ -8,3 +8,57 @@ Get https://cse341-class.onrender.com HTTP/1.1
 
 ###
 Get https://cse341-class.onrender.com/6633bc0f9bfc86d4952786e4 HTTP/1.1
+
+###
+Post http://localhost:8080/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Shara",
+    "lastName": "Gardner",
+    "email": "gardnershara@hotmail.com",
+    "favoriteColor": "Green",
+    "birthday": "1976-01-30"
+}
+
+###
+Put http://localhost:8080/6633bc0f9bfc86d4952786e4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Shara",
+    "lastName": "Gardner",
+    "email": "gardnershara@hotmail.com",
+    "favoriteColor": "Red",
+    "birthday": "1976-01-30"
+}
+
+###
+Delete http://localhost:8080/6633bc0f9bfc86d4952786e4 HTTP/1.1
+
+###
+Post http://cse341-class.onrender.com/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Shara",
+    "lastName": "Gardner",
+    "email": "gardnershara@hotmail.com",
+    "favoriteColor": "Green",
+    "birthday": "1976-01-30"
+}
+
+###
+Put http://cse341-class.onrender.com/6633bc0f9bfc86d4952786e4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Shara",
+    "lastName": "Gardner",
+    "email": "gardnershara@hotmail.com",
+    "favoriteColor": "Red",
+    "birthday": "1976-01-30"
+}
+
+###
+Delete http://cse341-class.onrender.com/6633bc0f9bfc86d4952786e4 HTTP/1.1

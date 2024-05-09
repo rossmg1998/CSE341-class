@@ -10,4 +10,10 @@ router.get("/", myController.mongo_getall);
 
 router.get("/:id", myController.mongo_getsingle);
 
+router.post("/", myController.createContact);
+
+router.put("/:id", myController.updateContact);
+
+router.delete("/:id", myController.deleteContact);
+
 module.exports = router;
