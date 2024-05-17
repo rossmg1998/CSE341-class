@@ -6,9 +6,9 @@ const doc = {
     description: 'Temple API',
   },
   // change to render link
-  host: 'localhost:8080',
+  host: 'https://cse341-class.onrender.com',
   // change to https
-  schemes: ['http'],
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
