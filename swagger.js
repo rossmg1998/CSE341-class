@@ -6,7 +6,7 @@ const doc = {
     description: 'Temple API',
   },
   // change to render link
-  host: 'https://cse341-class.onrender.com',
+  host: 'cse341-class.onrender.com',
   // change to https
   schemes: ['https'],
 };
