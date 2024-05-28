@@ -25,6 +25,9 @@ const mongo_getall = async (req, res) => {
 const mongo_getsingle = async (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   console.log(req.params.id);
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to update a contact.');
+  }
   const id = new ObjectId(req.params.id);
   const client = new MongoClient(process.env.mongoDB_URI);
   await client.connect();
@@ -54,6 +57,9 @@ const createContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to update a contact.');
+  }
   const id = new ObjectId(req.params.id);
   const contact = {
     firstName: req.body.firstName,
@@ -74,6 +80,9 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to update a contact.');
+  }
   const id = new ObjectId(req.params.id);
   const mongodb = new MongoClient(process.env.mongoDB_URI);
   await mongodb.connect();
